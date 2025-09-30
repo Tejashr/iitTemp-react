@@ -224,13 +224,13 @@ function Contact() {
                   </h3>
                   <div className="space-y-1">
                     <p className="text-gray-600 dark:text-gray-300">
-                      Bangalore: +91-80-4862-1234
+                      Bangalore: +91-11-1111-1111
                     </p>
                     <p className="text-gray-600 dark:text-gray-300">
-                      Delhi-NCR: +91-120-4581-5678
+                      Delhi-NCR: +91-111-1111-1111
                     </p>
                     <p className="text-gray-600 dark:text-gray-300">
-                      Toll-Free: 1800-203-8877
+                      Toll-Free: 1111-111-1111
                     </p>
                   </div>
                 </div>
@@ -246,13 +246,13 @@ function Contact() {
                       href="mailto:admissions@iitprep.edu.in"
                       className="text-blue-600 dark:text-blue-400 hover:underline block"
                     >
-                      admissions@iitprep.edu.in
+                      admissions@demo.com
                     </a>
                     <a
                       href="mailto:support@iitprep.edu.in"
                       className="text-blue-600 dark:text-blue-400 hover:underline block"
                     >
-                      support@iitprep.edu.in
+                      support@demo.com
                     </a>
                   </div>
                 </div>
