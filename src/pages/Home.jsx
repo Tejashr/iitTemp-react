@@ -140,22 +140,10 @@ function Home() {
                 "Personalized insights into your performance to help you track and improve consistently.",
               icon: "📊",
             },
-            {
-              title: "24/7 Doubt Solving",
-              description:
-                "Instant access to mentors for clearing doubts — anytime, anywhere.",
-              icon: "💡",
-            },
-            {
-              title: "Comprehensive Study Material",
-              description:
-                "Top-notch material designed by IIT toppers covering every JEE concept thoroughly.",
-              icon: "📚",
-            },
           ].map((feature, index) => (
             <motion.div
               key={index}
-              className="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl"
+              className="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl text-center"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -175,6 +163,46 @@ function Home() {
               </p>
             </motion.div>
           ))}
+        </div>
+        <div className="flex justify-center mt-8">
+          <div className="grid md:grid-cols-2 gap-8">
+            {[
+              {
+                title: "24/7 Doubt Solving",
+                description:
+                  "Instant access to mentors for clearing doubts — anytime, anywhere.",
+                icon: "💡",
+              },
+              {
+                title: "Comprehensive Study Material",
+                description:
+                  "Top-notch material designed by IIT toppers covering every JEE concept thoroughly.",
+                icon: "📚",
+              },
+            ].map((feature, index) => (
+              <motion.div
+                key={index}
+                className="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl text-center"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 0.5,
+                  delay: (index + 6) * 0.1,
+                  ease: "easeOut",
+                }}
+                viewport={{ once: true, amount: 0.3 }}
+                whileHover={{ scale: 1.03, transition: { duration: 0.2 } }}
+              >
+                <div className="text-4xl mb-4">{feature.icon}</div>
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300">
+                  {feature.description}
+                </p>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </motion.div>
 
