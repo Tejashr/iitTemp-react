@@ -164,7 +164,7 @@ function Home() {
             </motion.div>
           ))}
         </div>
-        <div className="flex justify-center mt-8">
+        <div className="mt-8 flex justify-center">
           <div className="grid md:grid-cols-2 gap-8">
             {[
               {
