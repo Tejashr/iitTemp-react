@@ -171,7 +171,7 @@ function Contact() {
                   >
                     Request a Callback
                   </button>
-                  <a
+                  {/* <a
                     href="https://wa.me/911234567890" // Replace with your WhatsApp number
                     target="_blank"
                     rel="noopener noreferrer"
@@ -179,7 +179,7 @@ function Contact() {
                     aria-label="Chat on WhatsApp"
                   >
                     <WhatsAppIcon />
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </form>

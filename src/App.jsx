@@ -15,6 +15,7 @@ import Clothing from "./pages/products/Clothing";
 import HomeLiving from "./pages/products/HomeLiving";
 import Pricing from "./pages/Pricing";
 import ScrollToTop from "./components/ScrollToTop";
+import WhatsAppIcon from "./components/WhatsAppIcon";
 
 function App() {
   const darkMode = useSelector(selectDarkMode);
@@ -46,6 +47,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <WhatsAppIcon />
       </div>
     </Router>
   );
