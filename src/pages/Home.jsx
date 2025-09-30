@@ -52,8 +52,8 @@ function Home() {
     <div className="min-h-screen pt-16 bg-white dark:bg-gray-900 transition-colors duration-200">
       {/* Hero Section */}
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
         className="container mx-auto px-4 py-16"
       >
@@ -75,6 +75,19 @@ function Home() {
             Personalized learning, proven results, and expert mentors guiding
             you from fundamentals to JEE success.
           </motion.p>
+          <motion.img
+            src="/banner.svg"
+            alt="IIT-JEE Learning Platform Banner"
+            className="w-full mx-auto"
+            style={{
+              height: "350px",
+              borderRadius: "10px",
+              objectFit: "cover",
+            }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6 }}
+          />
         </div>
       </motion.div>
 
@@ -104,27 +117,39 @@ function Home() {
               icon: "🎥",
             },
             {
+              title: "AI-Augmented Test Series",
+              description:
+                "Smart test series with advanced analytics to simulate the real exam, predict your potential rank, and give precise improvement strategies.",
+              icon: "🤖",
+            },
+            {
+              title: "Personalized Mentorship Plans",
+              description:
+                "One-on-one mentor guidance with customized study plans tailored to your learning style, school schedule, and exam goals.",
+              icon: "🔔",
+            },
+            {
               title: "Adaptive Practice Tests",
               description:
-                "AI-powered tests that adapt to your level and help you focus on areas that need improvement.",
+                "AI-powered tests that adjust to your level and strengthen weak areas.",
               icon: "📝",
             },
             {
-              title: "Progress Reports",
+              title: "Detailed Progress Reports",
               description:
-                "Detailed personalized progress reports to track your improvement and identify weak areas.",
+                "Personalized insights into your performance to help you track and improve consistently.",
               icon: "📊",
             },
             {
               title: "24/7 Doubt Solving",
               description:
-                "Round-the-clock access to expert mentors for clearing your doubts and queries instantly.",
+                "Instant access to mentors for clearing doubts — anytime, anywhere.",
               icon: "💡",
             },
             {
-              title: "Study Material",
+              title: "Comprehensive Study Material",
               description:
-                "Comprehensive study materials designed by IIT toppers covering all JEE topics thoroughly.",
+                "Top-notch material designed by IIT toppers covering every JEE concept thoroughly.",
               icon: "📚",
             },
           ].map((feature, index) => (

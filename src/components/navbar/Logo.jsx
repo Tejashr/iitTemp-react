@@ -6,10 +6,10 @@ export default function Logo() {
       <Link to="/" className="flex items-center gap-0.5 sm:gap-1">
         <img src="/logo.svg" alt="Logo" className="h-12 w-12" />
         <span className="text-xl sm:text-2xl font-extrabold bg-gradient-to-r from-[#4A90E2] to-[#8B5CF6] bg-clip-text text-transparent">
-          Coaching
+          Legendary
         </span>
         <span className="text-xl sm:text-2xl font-extrabold text-gray-800 dark:text-white">
-          Space
+          IIT
         </span>
       </Link>
     </div>
